@@ -1,0 +1,16 @@
+psuedoCode
+
+enter value
+if value mod two is 0
+    sumodd += value;
+if value mod two is not 0
+    summod += value;
+if value is = 0, stop reading
+
+average odds
+average evens    
+
+display average odds
+display average evens
+
+return 0

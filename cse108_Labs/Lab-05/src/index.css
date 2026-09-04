@@ -1,0 +1,150 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2e3035;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(148, 130, 109) ;
+}
+h1{
+  text-align: center;
+}
+button{
+  padding: 5px;
+  margin: 5px;
+  font-size: large;
+  :focus{
+    background-color: #b39877;
+  }
+}
+input{
+  background-color: #bea78b;
+  border-style: hidden;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.uI{
+  display: flex;
+  width: 100%;
+  height: 94.6vh;
+  background-color: pink;
+}
+#stuRost{
+  width: 35%;
+  background-color: bisque;
+  color: #1a1a1a;
+  float: left;
+  border-right-width: 15px;
+  border-right-style: ridge;
+  border-right: #1a1a1a;
+}
+#stuRost h1{
+  background-color: #bea78b;
+  padding:0;
+  margin:0;
+  text-align: center;
+  color: #ffffff;
+}
+#stuRost ul{
+  overflow: scroll;
+  height: 94.5%;
+ }
+#stuRost li{
+  padding-top:10px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#stuRost li button{
+  margin: auto;
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: 500;
+  width: 98%;
+  text-align: left;
+  background-color: #d6bea1;
+  border-width: 0px;
+}
+#stuRost li button:hover{
+  background-color: #b39877;
+}
+#stuRost li button:focus{
+  background-color: #b39877;
+}
+#uI{
+  width: 90%;
+}
+
+#gSpace{
+  display: flex;
+  height: 80%;
+  background-color: #b39877;
+}
+#stuTable{
+  margin: auto;
+  padding:5px;
+  background-color: #d6bea1;
+  color: white;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #7a522c; 
+}
+#stuTable tr{
+  padding: 5%;
+  border-color: #1a1a1a;
+  border-style: solid;
+  align-items: center;
+}
+
+#bSpace{
+  float: bottom;
+  background-color: #ddc29f;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bBoard{
+  background-color: #9e6f43;
+  border-radius: 20px;
+  border-style:ridge;
+  border-color: #7a522c;
+}
+.bBoard:hover{
+  background-color: #7a522c;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,22 @@
+]}-{Assignment 1}-{[
+1. What line caused the segmentation fault?
+    line 25
+2. How do you fix the line so it works properly?
+    by derefrencing the pointer to its adress.
+3. What is the bug here?
+    no pointers, meaning it accesses by value when it is needed to be passed by reference
+4. How do you fix it?
+    you dereference it and update it via pointers.
+    
+]}-{Assignment 2}-{[
+1. Run the program with the following input: “HELLO!” for str1 and “hello!” for str2. Is the output
+expected?
+    no it is not.
+2. Do not stop the program, enter “HI!” for str1 and “hi!” for str2. Is the output expected? What is the bug here? Try to fix the program so it will print the output correctly.
+    It does not run properly. The bug is that it not only keeps memory from the prior string and repeats its. 
+3. Do not stop the program, enter “Hello! How are you?” for str1 and “I am fine, thank you!” for str2. Is the output expected? Why do you think this happens? You do not need to fix
+this
+    The text is not expected, I think this happens because 1, it keeps memory of the old s1 while also using data that excedes the char bounds. 
+
+
+    

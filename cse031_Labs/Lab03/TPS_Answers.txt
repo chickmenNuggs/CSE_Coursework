@@ -1,0 +1,54 @@
+Partners: None
+
+~~~~{|[](TPS ACTIVITY 1)[]|}~~~~~
+1. Name the 3 pools for memory and what kind of variables will be stored in each pool.
+    Stack (Persistant Variables)
+    Heap (Dynamically allocated variables)
+    Static (global and static variables)
+
+2. Open mem.c with your favorite text editor and discuss the following questions with your partner:
+    a. How many variables are declared?
+        3
+    b. How many of them are pointers? What type of data does each pointer point to?
+        2
+        the first one is an int pointer, while the second is a pointer to said int pointer
+    c. Which pool of memory are these variables stored in?
+        the heap
+    d. Which pool of memory will the pointer ptr point to in line 12.
+        none, line twelve allocates storage for the pointer handle, in line 11, ptr points to memory in the stack.
+3. Using a piece of paper (or a drawing app), draw the 3 pools of memory and indicate the locations (in which pool?) of the variables in mem.c using boxes 
+ (like what we did in lecture). Label the boxes with variable names, their content, and their addresses.
+ You will need to insert extra code to obtain the addresses of these variables.
+           ___________________________
+          |           [Stack]         |
+          |                           |
+          | Num : addr[0x7ffda1359e7] | <---------]
+          |                           |           |
+          |___________________________|           |
+           _______________________________        |
+          |             [Heap]            |       |
+   [----- | Handle : addr[0x56a67f4062a0] |       |
+   |      |                               |       |
+   [----> | Ptr : addr[0x56a67f4062c0]    | ------]
+          |_______________________________|
+           _____________________
+          |       [Static]      |
+          |                     |
+          |                     |
+          |                     |
+          |_____________________|
+
+
+
+4. In the same drawing, use arrows to connect each pointer to its destination
+
+~~~~~~{[](TPS activity 2)[]}~~~~~~
+1. Open NodeStruct.c and discuss what this program does.
+    It creates a Struct called Node with a data type of int, float, and node. It allows for you to create a linked list of sorts.
+2. Insert extra code to print out the value of head, addresses of head, iValue, fValue, and next pointed
+by head.
+    Done.
+3. Based on the addresses of the members of Node structure, what do you observe about how structures are stored in memory? 
+What is the relationship between the pointer (head) and its destination (the Node structure)?   
+    That the memory is stored contiguously. The destination is already allocated and dirrectly linked.
+

@@ -1,0 +1,55 @@
+TPS Partner: Dina Seoudi
+
+[)}-TPS ACTIVITY 1-{()]
+
+1. Open MemCast.c, compile and run the program. What do you expect the program to print? (%x in printf allows an integer to be printed in Hex format).
+    The output is expected to be 2.
+2. Before changing the code, what do you expect the program to print if you print four_ints[0] again at the end of the program?
+    I expect it still to print 2.
+3. Insert a print statement to output four_ints[0] at the end of the program in hex and verify your answer from (2). 
+    It printed garbage.
+4. Now add a print statement to the program so it will print out four_ints[1] in hex. What does it print? Are you surprised (or lost) by the results?
+    It prints out 2. I am confused
+5. Let us study the code carefully and investigate what happened. No, the memory did not go crazy.
+    a. How many array(s) were allocated in this program?
+        one Array
+    b. Are four_ints and four_c pointing to the same location?
+        yes
+    c. Verify your answer of (b) by printing out the values of four_ints and four_c.
+        Both show the same address.
+6. Write a loop to print out the addresses and values (in Hex) of all the elements of four_ints. What is the difference in addresses between two consecutive elements? Discuss what this difference means.
+    the adress increases by four bytes, indicating that the array is constructed of a four byte data type, likely to be an int.
+7. Use a piece of paper to draw the layout of the array horizontally so that the smallest address begins from the RIGHT-hand-side. Indicate the
+address and value of each element based on the results of (6). You can draw it digitally.
+    done
+8. Now, write a loop to print out the same information for four_c as you did in (6). What is the difference in addresses between two consecutive elements? Discuss what this difference means.
+    it increases by one byte, indicating that it is likely a one byte data structure, a char.
+9. Use the same piece of paper (or file) from (7) to draw a similar structure for four_c.
+    done
+10. By comparing the layout of the array pointed by the two pointers, what do you observe in terms of how C accesses memory when the index of an array is incremented?
+
+[)-TPS ACTIVITY 2()]
+
+1. Open Array2D.c. This program will create a n x n array of int. Explain what line #8 does.
+    it allocates the memory for a double pointer with the size of 20 bytes.
+2. Since every array must be allocated in the memory before it can be used, we need to allocate the rows one by one. To do this, we need to be able to access the pointers from the first array (pointed by arr).
+Assuming i is the index of that array, how do we access the ith value of the array?
+    *(arr + i)
+3. Without using array notations ([]), insert code to complete allocating all the rows and initialize all
+contents to be 0. Your code should work with different values for n. Hint: if j is the index of each
+row, how do you access arr[i][j] in pointer notation?
+    *(*(arr + i) + j)
+
+4. To verify whether you have created your array correctly, we need a function to print out the array. The
+function printArray has been declared. It takes in both the array to be printed and size of array. Why
+do we need to pass the size as an argument?
+    to loop through the matrix properly
+5. Complete printArray so it prints out the content and layout of an array correctly.
+
+6. Now, let us modify the content of the array. Insert code to make the array into a diagonal matrix that looks like the following (again, do not limit the size to 5):
+| 1 | 0 | 0 | 0 | 0 | 
+| 0 | 2 | 0 | 0 | 0 | 
+| 0 | 0 | 3 | 0 | 0 | 
+| 0 | 0 | 0 | 4 | 0 | 
+| 0 | 0 | 0 | 0 | 5 | 
+7. Call printArray to print out your new array and verify result.

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "code.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lab 03: Web Calculator</title>
+</head>
+
+<body>
+    <table id = calc>
+        <tr>
+            <td colspan="3">
+            <input type="text" id = rez value="">
+            </td>
+            <td><button id = clear value = "c" onclick = "clr()">C</button></td>
+        </tr>
+        <tr>   
+            <td> <button id = nums value = "7" onclick="display('7')" onkeydown=""> 7 </button></td>
+            <td> <button id = nums value = "8" onclick="display('8')"> 8 </button></td>
+            <td> <button id = nums value = "9" onclick="display('9')"> 9 </button></td>
+            <td> <button id = opps value = "/" onclick="display('/')"> / </button></td>
+        </tr>
+        <tr>
+            <td> <button id = nums value = "4" onclick="display('4')"> 4 </button></td>
+            <td> <button id = nums value = "5" onclick="display('5')"> 5 </button></td>
+            <td> <button id = nums value = "6" onclick="display('6')"> 6 </button></td>
+            <td> <button id = opps value = "*" onclick="display('*')"> x </button></td>
+        </tr>
+        <tr>
+            <td> <button id = nums value = "1" onclick="display('1')"> 1 </button></td>
+            <td> <button id = nums value = "2" onclick="display('2')"> 2 </button></td>
+            <td> <button id = nums value = "3" onclick="display('3')"> 3 </button></td>
+            <td> <button id = opps value = "-" onclick="display('-')"> -</button></td>
+        </tr>
+        <tr>
+            <td> <button id = nums value = "0" onclick="display('0')"> 0 </button></td>
+            <td> <button id = nums value = "." onclick="display('.')"> • </button></td>
+            <td> <button id = opps value = "=" onclick="solve()"> = </button></td>
+            <td> <button id = opps value = "+" onclick="display('+')"> +</button></td>
+        </tr>
+    </table>
+
+</html>

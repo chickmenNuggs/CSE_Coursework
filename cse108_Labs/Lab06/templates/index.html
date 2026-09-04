@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src= "../static/functs.js"></script>
+    <link rel="stylesheet" href="../static/index.css">
+ </head>
+ <body>
+    
+ <h1>Student Grade Manager Ver. Blue</h1>
+      <div class = "uI">
+        <div id = "stuRost">
+            <h1>Student Roster</h1>
+            <ul id = "stuList">
+              
+            </ul>
+        </div>
+        <div id = "uI">
+          <div id = "gSpace"> 
+            
+            <table id = "stuTable">
+              <tr>
+                <td><input class = "stuDat" id = "fName" type = "text" ></input></td>
+                <td><input class = "stuDat" id = "lName" type = "text" ></input></td>
+              </tr>
+              <tr>
+                <th> Student First Name</th>
+                <th> Student Last Name</th>
+              </tr>
+              <tr>
+                <td><input class = "stuDat" id = "lGrade" type = "text" value = "" ></input></td>
+                <td><input class = "stuDat" id = "pGrade" type = "text"></input></td>
+              </tr>  
+              <tr>
+                <th> Student Grade Letter</th>
+                <th> Student Grade Percent</th>
+              </tr>
+            </table>
+          </div>
+          <div id = "bSpace">
+            <button class = "bBoard" id='Load' onclick= loadRoster()>Load Roster</button>
+            <button class = "bBoard" id='Disp' onclick= displayGrade()>Display Grade</button>
+            <button class = "bBoard" id='Chng' onclick= changeGrade()>Change Grade</button>
+            <button class = "bBoard" id='adNS' onclick= addStudent()>Add new Student</button>
+            <button class = "bBoard" id='DelG' onclick= deleteGrade()>Delete Grade</button>
+            <button class = "bBoard" id='CLRC' onclick= clearData() >Clear Roster</button>
+          </div>
+        </div>
+      </div>
+ </body>
+ </html>
+

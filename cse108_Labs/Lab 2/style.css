@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #e6e3ff;
+}
+nav{background-color: #796fb7; padding: 0rem; margin: 0; border-style: solid; border-right: 0; border-left: 0; border-top-width: 15%; border-bottom-width: 15%; border-color: #000000; position: sticky; top: 0;}
+nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; display: flex; justify-content:space-between;}
+nav a { flex: 1; padding: 0; margin: 0; float:left; display: block; color: black; text-align: center; text-decoration: none; padding: 14px 16px; font-size: 120%; font-weight: bold;}
+nav a:hover:not(.active){ background-color: #8a7fd3; font-weight: bold;}
+.active { background-color: #9a8ee9; color: #f7de54; border: 0; font-weight: bold;}
+#container{ background-color: #e6e3ff; display: flex; width: 100%; height: 100%; top: 0px;}
+#left{ width: 40%; text-align: left; border-style: solid; 	 border-top: 0; border-left: 0; border-bottom: 0; border-right-width: 15%; border-color: #302f35; display: inline; justify-content: center;}
+#left p{
+	padding: 2%;
+	text-indent: 1rem;
+	color:  #302f35
+}
+#left ul{
+	list-style-type: none;
+	padding: 2%;
+	text-indent: 1rem;
+	color:  #302f35
+}
+#nm{
+	font-size: 120%;
+	font-weight: bold;
+	color:#302f35;
+	padding-bottom: 5px;
+}
+#left ul li a{
+	text-decoration: none;
+}
+#left iframe{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+}
+
+#left img {
+	margin:auto;
+	display:flex;
+	width: 50%;
+	justify-content: center;
+}
+hr{
+	width: 40%;
+	margin-bottom: 5px;
+	padding-bottom:0;
+}
+
+#right{
+    width: 60%; 
+    background-color: #e6e3ff;
+	float: right;
+    text-align: left;
+}
+#right img{
+	width: 100%;
+}
+#right p{
+	padding-left: 2%;
+	padding-right: 2%;
+	float: right;
+}
+#right table{
+	margin: auto;
+	justify-content: center;
+}
+
+#right table th{
+	text-align: center;
+	background-color: #c2bbf3;
+	border: 5px;
+}
+
+
+#header{
+	font-size: 120%;
+	padding: 2%;
+	text-align: center;
+	font-weight: bold;
+	background-color: #c2bbf3
+}
+#jLeft{
+	width: 20%; text-align: left; border-style: solid; 	 border-top: 0; border-left: 0; border-bottom: 0; border-right-width: 15%; border-color: #302f35; display: inline; justify-content: center;
+}

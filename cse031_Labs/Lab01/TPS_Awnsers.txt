@@ -1,0 +1,40 @@
+-----{[TPS 1]}-----
+    Name:
+        Mauricio Granera
+    Partners:
+        Vlad Rutskyi
+        Dina Seoudi
+        Rael Agraz
+-----{[TPS 2]}-----
+    1). How can you open a terminal from your Windows computer?
+            You can easily open a terminal from the windows computer by hitting the [Windows Key] then 
+            typing in "Ternminal" or "Comand Prompt" and running the first executable that show up.
+        a. Can you open more than 1 terminal at the same time?
+            Yes you can.
+        b. Why do you think you want to open more than 1 terminal at the same time?
+            So that you can open, acsess multiple files or directories simultaneously
+    2)In the terminal, how can you tell what are contents inside the current directory (i.e., what is the command)?
+        In the [Terminal] application, you can type in the command "ls" to display the current directories
+    3) From your current directory, how can you navigate to Desktop directory?
+        You can use the terminal comand "cd" followed by the directory location you wish to navigate to.
+    4) While you are in Desktop, create a new directory called CSE31. How do you do this?
+        You can create a new directory with the comand "mkdir" followed by the name of the directory you wish to make.
+-----{[TPS 3]}-----
+    1.Independently find 2 online references on how to use GCC in a Linux/Mac/PowerShell terminal.
+        Done
+    2. Share what you have found with your partners and save your results in the bookmark of your browser. You will refer to these references to answer the following questions.
+        Done
+    3. What command do you type in the terminal to compile your main.c?
+        gcc -c [filename]
+    4. How do you know if your program has compiled successfully?
+        there is no errors    
+    5. What does the –c flag do in gcc?
+        compile the program into machine code
+    6. What does the –g flag do in gcc?
+        -g includes the debuging files 
+    7. How do you change the executable name from main to cselab1?
+        using the -o flag
+    8. What happens when you compile your code by typing gcc main.c only?
+        there is a fatal error of no such file or directory
+    9. Now, let us run the program you have just compiled. What command do you use?
+        .\[FileName].exe or ./[FileName].out for Linux.
