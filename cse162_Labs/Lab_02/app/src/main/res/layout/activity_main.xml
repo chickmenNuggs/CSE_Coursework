@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/fragCont"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/labelGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity(m/s²)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/uiGravX"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+    <EditText
+        android:id="@+id/uiGravY"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+    <EditText
+        android:id="@+id/uiGravZ"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/labelMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnetic Field (μT)"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/uiMagX"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+    <EditText
+        android:id="@+id/uiMagY"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+    <EditText
+        android:id="@+id/uiMagZ"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:inputType="none"
+        android:focusable="false"
+        />
+
+
+</LinearLayout>
